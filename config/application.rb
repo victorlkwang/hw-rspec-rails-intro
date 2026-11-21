@@ -35,7 +35,6 @@ module Rottenpotatoes
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
-    config.web_console.development_only = false
     # Enable the asset pipeline
     # config.assets.enabled = true
 
@@ -57,8 +56,6 @@ module Rottenpotatoes
     # config.active_record.whitelist_attributes = true
 
     # Fix for Heroku deploy
-    config.assets.initialize_on_precompile = false
-
     config.active_support.cache_format_version = 7.1
   end
 end
